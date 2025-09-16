@@ -15,17 +15,17 @@ def move_bottom_right():
 
 
 def move_up():
-    for y in range(90, 560, 5):
+    for y in range(90, 550, 5):
         draw_everything(780, y)
 
 
 def move_top():
     for x in range(780, 20, -5):
-        draw_everything(x, 560)
+        draw_everything(x, 550)
 
 
 def move_down():
-    for y in range(560, 90, -5):
+    for y in range(550, 90, -5):
         draw_everything(20, y)
 
 
@@ -48,9 +48,9 @@ def move_tri_up():
     x = 780
     y = 90
     delX = 5
-    delY = 470 / (380 / delX)
+    delY = 460 / (380 / delX)
 
-    while x > 400 and y < 560:
+    while x > 400 and y < 550:
         draw_everything(x, y)
         x -= delX
         y += delY
@@ -58,9 +58,9 @@ def move_tri_up():
 
 def move_tri_down():
     x = 400
-    y = 560
+    y = 550
     delX = 5
-    delY = 470 / (380 / delX)
+    delY = 460 / (380 / delX)
 
     while x > 20 and y > 90:
         draw_everything(x, y)
@@ -77,8 +77,8 @@ def move_triangle():
 
 def move_circle():
     for degree in range(-90, -450, -2):
-        x = 400 + 235 * math.cos(math.radians(degree))
-        y = 325 + 235 * math.sin(math.radians(degree))
+        x = 400 + 230 * math.cos(math.radians(degree))
+        y = 320 + 230 * math.sin(math.radians(degree))
         draw_everything(x, y)
 
 while True:
