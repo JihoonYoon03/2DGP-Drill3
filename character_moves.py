@@ -51,6 +51,14 @@ def draw_everything(x: int, y: int):
 
 
 def move_tri_up():
+    delX = 5
+    delY = 560 / (380 / delX)
+    x = 780
+    y = 90
+    while x > 400 and y < 560:
+        draw_everything(x, y)
+        x -= delX
+        y += delY
     pass
 
 
@@ -71,7 +79,7 @@ def move_circle():
 
 
 while True:
-    move_rectangle()
+    # move_rectangle()
     move_triangle()
     move_circle()
     # break
