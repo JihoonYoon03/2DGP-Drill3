@@ -4,33 +4,17 @@ open_canvas()
 boy = load_image('character.png')
 grass = load_image('grass.png')
 
-
-def move_bottom():
-    pass
-
-
-def move_up():
-    pass
-
-
-def move_top():
-    pass
-
-
-def move_down():
-    pass
-
-
 def move_rectangle():
-    move_bottom()
-    move_up()
-    move_top()
-    move_down()
+    x, y = 400, 90
+    draw_everything(x, y)
+    pass
+
+
+def draw_everything(x: int, y: int):
     clear_canvas_now()
-    boy.draw_now(400, 90)
+    boy.draw_now(x, y)
     grass.draw_now(400, 30)
     delay(0.05)
-    pass
 
 
 def move_triangle():
