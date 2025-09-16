@@ -23,10 +23,14 @@ def move_right():
 
 
 def move_top():
+    for x in range(780, 20, -5):
+        draw_everything(x, 560)
     pass
 
 
 def move_left():
+    for y in range(560, 90, -5):
+        draw_everything(20, y)
     pass
 
 
