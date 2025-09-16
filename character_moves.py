@@ -5,7 +5,12 @@ boy = load_image('character.png')
 grass = load_image('grass.png')
 
 
-def move_bottom():
+def move_bottom_left():
+    for x in range(20, 400, 5):
+        draw_everything(x, 90)
+    pass
+
+def move_bottom_right():
     pass
 
 
@@ -22,12 +27,11 @@ def move_left():
 
 
 def move_rectangle():
-    x, y = 400, 90
-    move_bottom()
+    move_bottom_right()
     move_right()
     move_top()
     move_left()
-    draw_everything(x, y)
+    move_bottom_left()
     pass
 
 
