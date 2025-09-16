@@ -11,10 +11,14 @@ def move_bottom_left():
     pass
 
 def move_bottom_right():
+    for x in range(400, 780, 5):
+        draw_everything(x, 90)
     pass
 
 
 def move_right():
+    for y in range(90, 560, 5):
+        draw_everything(780, y)
     pass
 
 
