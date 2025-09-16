@@ -4,8 +4,29 @@ open_canvas()
 boy = load_image('character.png')
 grass = load_image('grass.png')
 
+
+def move_bottom():
+    pass
+
+
+def move_right():
+    pass
+
+
+def move_top():
+    pass
+
+
+def move_left():
+    pass
+
+
 def move_rectangle():
     x, y = 400, 90
+    move_bottom()
+    move_right()
+    move_top()
+    move_left()
     draw_everything(x, y)
     pass
 
