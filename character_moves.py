@@ -16,7 +16,7 @@ def move_bottom_right():
     pass
 
 
-def move_right():
+def move_up():
     for y in range(90, 560, 5):
         draw_everything(780, y)
     pass
@@ -28,7 +28,7 @@ def move_top():
     pass
 
 
-def move_left():
+def move_down():
     for y in range(560, 90, -5):
         draw_everything(20, y)
     pass
@@ -36,9 +36,9 @@ def move_left():
 
 def move_rectangle():
     move_bottom_right()
-    move_right()
+    move_up()
     move_top()
-    move_left()
+    move_down()
     move_bottom_left()
     pass
 
@@ -50,7 +50,19 @@ def draw_everything(x: int, y: int):
     delay(0.05)
 
 
+def move_tri_up():
+    pass
+
+
+def move_tri_down():
+    pass
+
+
 def move_triangle():
+    move_bottom_right()
+    move_tri_up()
+    move_tri_down()
+    
     pass
 
 
