@@ -41,7 +41,7 @@ def draw_everything(x: int, y: int):
     clear_canvas_now()
     boy.draw_now(x, y)
     grass.draw_now(400, 30)
-    delay(0.05)
+    delay(0.02)
 
 
 def move_tri_up():
@@ -76,14 +76,14 @@ def move_triangle():
 
 
 def move_circle():
-    pass
-
+    for degree in range(-90, -450, -2):
+        x = 400 + 235 * math.cos(math.radians(degree))
+        y = 325 + 235 * math.sin(math.radians(degree))
+        draw_everything(x, y)
 
 while True:
-    # move_rectangle()
+    move_rectangle()
     move_triangle()
     move_circle()
-    # break
-    pass
 
 close_canvas()
